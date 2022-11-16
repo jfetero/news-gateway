@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:scrollbars="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/articleTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        android:textAlignment="center"
+        android:textColor="#959292"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="20 pledges for 2020: One month into my new vegan diet, I'm feeling positive about what lies ahead" />
+
+    <TextView
+        android:id="@+id/articleDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="16sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/articleTitle"
+        tools:ignore="TextContrastCheck"
+        tools:text="Jan 28, 2020 15:22" />
+
+    <TextView
+        android:id="@+id/articleAuthor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="16sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/articleDate"
+        tools:text="Adam Hamdani" />
+
+    <ImageView
+        android:id="@+id/articleImage"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/articleAuthor"
+        tools:srcCompat="@drawable/brokenimage" />
+
+    <TextView
+        android:id="@+id/articleDescription"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="sans-serif-medium"
+        android:scrollbars="vertical"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/pageNumber"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/articleImage"
+        app:layout_constraintVertical_bias="1.0"
+        tools:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam lectus tellus, porta id sapien ut, sagittis dapibus lacus. Nullam interdum purus in hendrerit pretium. Integer luctus laoreet dui in consectetur. Quisque tempor euismod magna, vel sollicitudin neque. Vivamus massa lectus, elementum eget dolor ac, dignissim varius leo. Donec felis nisi, congue quis vestibulum a, dignissim nec libero. Sed tempus felis nisi, non porttitor odio sollicitudin a. Mauris eu dui ac sem vehicula gravida id vitae diam. Proin id diam ligula.  Aliquam erat volutpat. Phasellus non felis ac enim rhoncus lacinia. Phasellus sollicitudin lorem vitae pulvinar vulputate. Nam eu imperdiet sapien, in malesuada mauris. Nulla hendrerit urna posuere lectus efficitur consequat. Integer a enim vehicula, suscipit lacus ut, tempus nunc. Aenean tortor augue, bibendum ac nunc ut, dictum tempor mauris. Vestibulum mauris lectus, malesuada quis est non, rutrum ultricies justo. Aenean tempor ex eget lacus efficitur, ut volutpat justo ultrices. Sed nec ultricies tellus.  Proin at lacus efficitur, pharetra justo eu, mattis orci. Suspendisse suscipit vulputate bibendum. Sed sed diam ligula. Fusce ullamcorper lorem tellus, sit amet molestie eros vulputate non. Cras suscipit magna sed dui blandit laoreet. Mauris a interdum felis. Nulla sed ex sed arcu mattis sodales ut quis ex. Donec ac sem nisl. Vestibulum nulla nulla, laoreet ac imperdiet nec, iaculis et erat. In rhoncus erat ut purus egestas iaculis. Donec massa purus, lobortis in justo id, porttitor eleifend risus. Sed sed volutpat orci.  Sed hendrerit scelerisque felis, at luctus felis egestas sed. Proin quis diam molestie, placerat massa ac, hendrerit lacus. Nullam porttitor hendrerit velit, et pellentesque erat eleifend a. Quisque lacinia sodales lobortis. Vestibulum tempus ex in metus maximus, sed lacinia magna dignissim. Maecenas tristique, lorem ac lacinia tristique, neque ligula auctor ex, in pretium sapien elit eu mi. Praesent nec libero lectus. Vivamus ultrices eu dui vitae sagittis. Ut pretium mattis libero ac vestibulum. Interdum et malesuada fames ac ante ipsum primis in faucibus.  Nunc eu erat quis est tincidunt egestas. Praesent libero augue, laoreet sed nisi sed, interdum dapibus justo. Nulla venenatis dui at magna auctor vehicula. Etiam eget dolor eu velit posuere venenatis eu vel ipsum. Nunc sollicitudin facilisis urna fringilla dapibus. Morbi fringilla eros ac ex egestas imperdiet. Mauris eget aliquet orci. Phasellus a feugiat dolor. Nullam et urna vel elit condimentum commodo dapibus nec erat. Pellentesque enim diam, condimentum et dignissim id, convallis sit amet arcu. Morbi porttitor turpis eu volutpat volutpat. Mauris interdum vulputate augue et tincidunt. Vestibulum ut sem et lorem consequat aliquet vitae dignissim erat.  Maecenas tincidunt bibendum metus, eget efficitur massa feugiat eu. Curabitur vel molestie dolor, a tincidunt arcu. Nulla sit amet libero ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean aliquet lectus eu ligula efficitur, et tristique elit volutpat. Aenean vitae nisl eu tellus dapibus sodales eu eu ligula. Donec sit amet porttitor nibh. Sed lectus neque, volutpat sit amet dignissim vel, hendrerit at ante. Donec id dui a ipsum viverra rhoncus. Nullam vel bibendum tellus.  Quisque nec nibh viverra, feugiat ligula at, laoreet diam. Nunc euismod consequat justo tempor commodo. Aliquam gravida tincidunt augue, non feugiat tellus tincidunt sed. Sed consequat vitae massa quis imperdiet. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas molestie volutpat dictum. Suspendisse justo nulla, viverra fermentum tortor sit amet, sollicitudin posuere diam. Donec dui felis, consectetur in augue non, ornare semper libero. Mauris ac accumsan purus, sit amet lacinia sem. Aenean eget porta tortor. Nunc dignissim sem sed arcu faucibus, sit amet dictum odio malesuada. Vestibulum rhoncus sapien at magna lobortis semper. Integer dolor neque, cursus quis libero vitae, suscipit accumsan lacus. Proin ac mauris libero.  Vivamus nisl dolor, dapibus eget lacus nec, laoreet pulvinar mi. Integer id tellus a ex blandit feugiat. Vestibulum at fringilla elit, in mollis neque. Aliquam sodales ex sed augue lacinia mollis. Etiam porta justo metus, a varius turpis interdum sit amet. Mauris sit amet erat non nulla fermentum rutrum nec id mi. Curabitur nisi magna, eleifend non felis et, sagittis viverra urna. Vestibulum eget arcu lacus.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur neque elit, malesuada quis odio ut, pulvinar condimentum urna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean a feugiat diam, vitae aliquet risus. Phasellus id felis id justo accumsan ornare quis eget purus. Donec eget mi at augue posuere cursus ac a est. Integer sed tortor viverra, maximus tellus non, ultrices urna. Quisque pharetra, nunc ac fringilla ornare, nisl lacus sodales sapien, quis lacinia lacus dolor ac arcu. Sed iaculis tristique metus, vitae laoreet turpis aliquet a. Proin viverra justo ac tellus convallis gravida. Maecenas laoreet pellentesque mollis. Vestibulum vulputate tincidunt sem, eu sodales enim tincidunt vel. Duis cursus ornare felis, quis tempus erat pellentesque in. Sed fermentum neque tellus, eu finibus est dictum a.  Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin commodo risus in dolor euismod, sed vehicula odio dictum. Donec mollis elit ac suscipit blandit. Vivamus vitae posuere felis, quis vulputate odio. Donec elementum vel nibh vel fringilla. Etiam in facilisis ipsum, vel bibendum est. Suspendisse quis lacus massa. Phasellus varius finibus sem ac tristique. Vestibulum egestas mollis lectus, ac efficitur nunc viverra at.  Nam vel risus lorem. Pellentesque lobortis eros non erat faucibus feugiat. Quisque hendrerit eget ipsum sit amet venenatis. Proin dapibus at tellus a dapibus. Cras volutpat varius sodales. Aenean a est tincidunt, dapibus odio a, tincidunt felis. Proin commodo suscipit sem, et tincidunt dolor elementum ac. Aliquam interdum, orci sed mattis dignissim, ligula leo sagittis enim, a laoreet est mi quis dolor. Nullam sed leo et arcu ullamcorper rhoncus. Integer venenatis nibh enim, tristique hendrerit nisl semper ut. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Morbi porttitor mauris eget vestibulum finibus.  Ut tempor a sapien pharetra pulvinar. Donec sagittis et sapien et fringilla. Vestibulum nulla nisi, congue quis nulla sed, ullamcorper venenatis dui. Fusce eu risus et augue ornare volutpat vel id diam. Mauris egestas at felis ut." />
+
+    <TextView
+        android:id="@+id/pageNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_marginBottom="5dp"
+        android:textColor="#979292"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="4 of 10" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
